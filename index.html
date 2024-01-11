@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.2em;
+            border-radius: 3px;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        #local-video, #remote-video {
+            width: 50%;
+            max-width: 400px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Video Call Website</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section id="video-container">
+        <video id="local-video" autoplay muted playsinline></video>
+        <video id="remote-video" autoplay playsinline></video>
+    </section>
+
+    <footer>
+        &copy; 2024 Video Call Website. All rights reserved.
+    </footer>
+
+    <!-- Include scripts for video call functionality (WebRTC or other) -->
+    <!-- Add your video call scripts here -->
+
+</body>
+</html>
